@@ -1,6 +1,8 @@
 ---
 title: "Welcome to My Analytics Lab"
 sidebar: false 
+about:
+  template: jolla
 ---
 
 Hello! My name is **Gokay Aydogan.**

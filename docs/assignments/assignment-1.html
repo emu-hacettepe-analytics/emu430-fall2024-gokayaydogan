@@ -222,7 +222,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#importing-the-polls_us_election_2016-data-set-from-the-dslabs-package" id="toc-importing-the-polls_us_election_2016-data-set-from-the-dslabs-package" class="nav-link" data-scroll-target="#importing-the-polls_us_election_2016-data-set-from-the-dslabs-package"><strong>Importing the “polls_us_election_2016” data set from the dslabs package</strong></a></li>
   <li><a href="#displaying-the-first-10-rows-of-the-data-set-on-my-web-page" id="toc-displaying-the-first-10-rows-of-the-data-set-on-my-web-page" class="nav-link" data-scroll-target="#displaying-the-first-10-rows-of-the-data-set-on-my-web-page"><strong>Displaying the first 10 rows of the data set on my web page</strong></a></li>
   <li><a href="#calculating-and-displaying-the-total-number-of-na-values-in-the-entire-data-set" id="toc-calculating-and-displaying-the-total-number-of-na-values-in-the-entire-data-set" class="nav-link" data-scroll-target="#calculating-and-displaying-the-total-number-of-na-values-in-the-entire-data-set"><strong>Calculating and displaying the total number of NA values in the entire data set</strong></a></li>
-  <li><a href="#replacing-all-na-values-in-the-dataset" id="toc-replacing-all-na-values-in-the-dataset" class="nav-link" data-scroll-target="#replacing-all-na-values-in-the-dataset"><strong>Replacing all NA values in the dataset</strong></a></li>
+  <li><a href="#replacing-all-na-values-in-the-dataset" id="toc-replacing-all-na-values-in-the-dataset" class="nav-link" data-scroll-target="#replacing-all-na-values-in-the-dataset">Replacing all NA values in the dataset</a></li>
   <li><a href="#section" id="toc-section" class="nav-link" data-scroll-target="#section"></a></li>
   </ul></li>
   </ul>
@@ -368,7 +368,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </section>
 <section id="replacing-all-na-values-in-the-dataset" class="level3">
-<h3 class="anchored" data-anchor-id="replacing-all-na-values-in-the-dataset"><strong>Replacing all NA values in the dataset</strong></h3>
+<h3 class="anchored" data-anchor-id="replacing-all-na-values-in-the-dataset">Replacing all NA values in the dataset</h3>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co">#I didn't use for-loops to perform this task because we learned that for-loops are rarely used in R in the previous class hour. So instead of using for-loops I tried to use sapply function. I understood the structure of the sapply function from our lecture slide but for learing more about the sapply function I checked the w3schools.com and got help from chatGPT. For example I learned that for replacing NA factor values with my first name I should use the levels(x) because If I try to replace NA values in a factor column with a new value that isn't already defined as a level (e.g., x[is.na(x)] &lt;- "Gokay"), R won’t recognize this new value. The line levels(x) &lt;- c(levels(x), my_first_name) adds a new level to the existing levels of the factor. This allows you to safely assign the new value ("Gokay" in this case) when replacing NA values, as it is now recognized as a valid level.  </span></span>
 <span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a></span>

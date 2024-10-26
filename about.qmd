@@ -3,7 +3,7 @@ title: "About Me"
 sidebar: false 
 ---
 
-[Download my CV](https://github.com/emu-hacettepe-analytics/emu430-fall2024-gokay-aydogan/blob/main/docs/Gokay_Aydogan_Resume.pdf)
+[Download my CV](https://github.com/gokay-aydogan/emu430-fall2024-gokayaydogan/blob/main/docs/Gokay_Aydogan_Resume.pdf)
 
 ## Education
 
@@ -30,7 +30,7 @@ sidebar: false
 ## Competencies
 
 | Skills & Abilities | Tools and Softwares | Certificates |
-|----|----|----|
+|------------------------|------------------------|------------------------|
 | Data Analytics | SQL, Spreadsheets, Excel, Tableau, R, RStudio | Google Data Analytics Professional Certificate - ongoing |
 | Programming | Python, R, Javascript |  |
 | Design | SolidWorks, Canva |  |
