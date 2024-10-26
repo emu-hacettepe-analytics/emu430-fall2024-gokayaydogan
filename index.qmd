@@ -3,7 +3,7 @@ title: "Welcome to My Analytics Lab"
 sidebar: false 
 ---
 
-Hello! My name is **Gokay Aydogan**
+Hello! My name is **Gokay Aydogan.**
 
 This is my personal webpage.
 
