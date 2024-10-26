@@ -28,7 +28,7 @@
     "href": "about.html",
     "title": "About Me",
     "section": "",
-    "text": "B.S., Industrial Engineering, Hacettepe University, Turkey, 20xx - ongoing."
+    "text": "Download my CV"
   },
   {
     "objectID": "about.html#employements",
@@ -70,5 +70,40 @@
     "title": "My Blog",
     "section": "",
     "text": "This page is under construction.\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "about.html#education",
+    "href": "about.html#education",
+    "title": "About Me",
+    "section": "Education",
+    "text": "Education\n\nB.S., Industrial Engineering, Hacettepe University, Ankara/Turkey, 2019 - ongoing."
+  },
+  {
+    "objectID": "about.html#work-experiences",
+    "href": "about.html#work-experiences",
+    "title": "About Me",
+    "section": "Work Experiences",
+    "text": "Work Experiences\n\nEmployment\n\nCarowinds Theme Park, Admissions Associate, NC/USA, 2022\n\n\n\nInternships\n\nBRF, Summer Intern, 2024\nGüriş İnşaat ve Mühendislik A.Ş., Summer Intern, 2023\nSerdar Plastik ve Ambalaj Sanayi A.Ş., Summer Intern, 2021"
+  },
+  {
+    "objectID": "about.html#projects",
+    "href": "about.html#projects",
+    "title": "About Me",
+    "section": "Projects",
+    "text": "Projects\n\nİşbir Sünger Sanayi A.Ş., Graduation Project, 2024"
+  },
+  {
+    "objectID": "about.html#competencies",
+    "href": "about.html#competencies",
+    "title": "About Me",
+    "section": "Competencies",
+    "text": "Competencies\n\n\n\n\n\n\n\n\nSkills & Abilities\nTools and Softwares\nCertificates\n\n\n\n\nData Analytics\nSQL, Spreadsheets, Excel, Tableau, R, RStudio\nGoogle Data Analytics Professional Certificate - ongoing\n\n\nProgramming\nPython, R, Javascript\n\n\n\nDesign\nSolidWorks, Canva"
+  },
+  {
+    "objectID": "about.html#hobbies",
+    "href": "about.html#hobbies",
+    "title": "About Me",
+    "section": "Hobbies",
+    "text": "Hobbies\n\nFitness\nCamping\nFootball"
   }
 ]

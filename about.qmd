@@ -3,28 +3,42 @@ title: "About Me"
 sidebar: false 
 ---
 
-# Education
+[Download my CV](https://github.com/emu-hacettepe-analytics/emu430-fall2024-gokay-aydogan/blob/main/docs/Gokay_Aydogan_Resume.pdf)
 
--   B.S., Industrial Engineering, Hacettepe University, Turkey, 20xx - ongoing.
+## Education
 
-# Work Experience
+-   B.S., Industrial Engineering, Hacettepe University, Ankara/Turkey, 2019 - ongoing.
 
-## Employements
+## Work Experiences
 
-1.  Firm xxx, position xx, year xxx
+### Employment
 
-2.  Firm yyy, position yyy, year yyy
+-   Carowinds Theme Park, Admissions Associate, NC/USA, 2022
 
-## Internships
+### Internships
 
-1.  Firm aaa, position xx, year xxx
+-   BRF, Summer Intern, 2024
 
-2.  Firm bbb, position yyy, year yyy
+-   Güriş İnşaat ve Mühendislik A.Ş., Summer Intern, 2023
 
-# Projects
+-   Serdar Plastik ve Ambalaj Sanayi A.Ş., Summer Intern, 2021
 
-# Competencies
+## Projects
 
-R, Quarto, Git, Python
+-   İşbir Sünger Sanayi A.Ş., Graduation Project, 2024
 
-# Hobbies
+## Competencies
+
+| Skills & Abilities | Tools and Softwares | Certificates |
+|------------------------|------------------------|------------------------|
+| Data Analytics | SQL, Spreadsheets, Excel, Tableau, R, RStudio | Google Data Analytics Professional Certificate - ongoing |
+| Programming | Python, R, Javascript |  |
+| Design | SolidWorks, Canva |  |
+
+## Hobbies
+
+-   Fitness
+
+-   Camping
+
+-   Football
