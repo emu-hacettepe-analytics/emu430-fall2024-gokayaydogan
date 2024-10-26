@@ -2,14 +2,113 @@
 title: "Assignment 1"
 ---
 
-# Assignment 1
-
-```{r}
-1 + 1
-```
-
 My first assignment has two parts.
+
+In the first part, I have chosen one of the video sources and briefly summarized it. Then, prepared one open-ended question and one multiple-choice question about the video.
+
+In the second part, I imported the "polls_us_election_2016" data set from the dslabs package and performed some operations.
 
 ## (a)
 
+### Summary of the video
+
+I selected the video with **Baykal Hafızoğlu** as the speaker. He started by sharing his school experiences and how he leaped into the industry. He discussed the projects he had worked on and also talked about his hobbies. He then summarized his insights regarding the world of Operations Research and Analytics. He classified OR/Analytics into four categories: descriptive analytics, diagnostic analytics, predictive analytics, and prescriptive analytics and He explained the relationship between these topics and the EMU courses we are taking during our bachelor's degree. After that, he began discussing analytical solutions used in the industry, such as the descriptive, predictive, and prescriptive methods, usage frequency, and delivery methods. Finally, he shared the lessons and experiences he gained from his professional life and answered students' questions.
+
+### Open-ended question about the speaking
+
+**Question:** Give real-life examples illustrating the descriptive, predictive, and prescriptive analytics methods.
+
+**Answer:**
+
+Descriptive Analytics:
+
+1.  Financial reports, such as quarterly earnings.
+
+2.  Health statistics in a hospital, like the number of daily admissions.
+
+Predictive Analytics:
+
+1.  Weather forecasting, using historical patterns to predict future conditions.
+2.  Credit scoring for loan applications, assessing the likelihood of default.
+
+Prescriptive Analytics:
+
+1.  Flight path optimization, where airlines select the most fuel-efficient and timely routes.
+2.  Personalized medicine, where treatment plans are suggested based on a patient's genetic profile, lifestyle, and medical history.
+
+### Multiple-choice question about the speaking
+
+**Question:** Which topic isn't included in the descriptive analytics?
+
+a-) Time-series analysis
+
+b-) Data visualization
+
+c-) Data mining
+
+d-) Optimization
+
+**Answer:** The correct answer is **option D**. Descriptive analytics focuses on summarizing historical data to understand patterns, trends, and relationships within the data. Optimization is typically associated with prescriptive analytics, which aims to find the best course of action based on data.
+
 ## (b)
+
+### **Importing the “polls_us_election_2016” data set from the dslabs package**
+
+```{r}
+library(dslabs) 
+data(polls_us_election_2016)
+```
+
+### **Displaying the first 10 rows of the data set on my web page**
+
+```{r}
+#Hence head function only displays the first 6 rows of the data we should specify 10 to get the first 10 rows.
+
+first_ten_rows <- head(polls_us_election_2016,10) 
+print(first_ten_rows)
+```
+
+### **Calculating and displaying the total number of NA values in the entire data set**
+
+```{r}
+num_of_NA <- sum(is.na(polls_us_election_2016)) 
+print(num_of_NA)
+```
+
+### **Replacing all NA values in the dataset**
+
+```{r}
+#I didn't use for-loops to perform this task because we learned that for-loops are rarely used in R in the previous class hour. So instead of using for-loops I tried to use sapply function. I understood the structure of the sapply function from our lecture slide but for learing more about the sapply function I checked the w3schools.com and got help from chatGPT. For example I learned that for replacing NA factor values with my first name I should use the levels(x) because If I try to replace NA values in a factor column with a new value that isn't already defined as a level (e.g., x[is.na(x)] <- "Gokay"), R won’t recognize this new value. The line levels(x) <- c(levels(x), my_first_name) adds a new level to the existing levels of the factor. This allows you to safely assign the new value ("Gokay" in this case) when replacing NA values, as it is now recognized as a valid level.  
+
+my_birth_year <- 2000
+my_first_name <- "Gokay"
+
+replaced_data <- polls_us_election_2016
+
+replaced_data[] <- sapply(replaced_data, function(x) {
+  if (is.numeric(x)) {
+    # Replace NA in numeric columns with birth year
+    x[is.na(x)] <- my_birth_year
+  } else if (is.factor(x)) {
+    # Add "Gokay" as a new factor level and replace NA
+    levels(x) <- c(levels(x), my_first_name)
+    x[is.na(x)] <- my_first_name
+  } else if (is.character(x)) {
+    # Replace NA in character columns with first name
+    x[is.na(x)] <- my_first_name
+  }
+  return(x)
+}, simplify = FALSE)
+
+#Printing the first 10 rows of the new data frame and the total number of NAs
+#remaining in the new data frame.
+
+new_first_ten_rows <- head(replaced_data,10)
+print(new_first_ten_rows)
+
+new_num_of_NA <- sum(is.na(replaced_data))
+print(new_num_of_NA)
+
+```
+
+### 

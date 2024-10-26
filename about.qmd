@@ -30,7 +30,7 @@ sidebar: false
 ## Competencies
 
 | Skills & Abilities | Tools and Softwares | Certificates |
-|------------------------|------------------------|------------------------|
+|----|----|----|
 | Data Analytics | SQL, Spreadsheets, Excel, Tableau, R, RStudio | Google Data Analytics Professional Certificate - ongoing |
 | Programming | Python, R, Javascript |  |
 | Design | SolidWorks, Canva |  |
